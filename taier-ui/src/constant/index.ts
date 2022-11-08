@@ -17,7 +17,7 @@
  */
 
 import type molecule from '@dtinsight/molecule';
-import type { ISubMenuProps } from '@dtinsight/molecule/esm/components';
+import type { IMenuItemProps, ISubMenuProps } from '@dtinsight/molecule/esm/components';
 
 /**
  * ID 集合
@@ -255,7 +255,7 @@ export enum TASK_TYPE_ENUM {
 	/**
 	 * Python Spark
 	 */
-	PY_SPARK = 16
+	PY_SPARK = 16,
 }
 
 /**
@@ -1020,17 +1020,17 @@ export const RESOURCE_ACTIONS = {
 	UPLOAD: {
 		id: ID_COLLECTIONS.RESOURCE_UPLOAD,
 		name: '上传资源',
-	} as ISubMenuProps,
+	} as IMenuItemProps,
 	REPLACE: {
 		id: ID_COLLECTIONS.RESOURCE_REPLACE,
 		name: '替换资源',
-	} as ISubMenuProps,
+	} as IMenuItemProps,
 	CREATE: {
 		id: ID_COLLECTIONS.RESOURCE_CREATE,
 		name: '新建文件夹',
-	} as ISubMenuProps,
-	DELETE: { id: ID_COLLECTIONS.RESOURCE_DELETE, name: '删除' } as ISubMenuProps,
-	EDIT: { id: ID_COLLECTIONS.RESOURCE_EDIT, name: '编辑' } as ISubMenuProps,
+	} as IMenuItemProps,
+	DELETE: { id: ID_COLLECTIONS.RESOURCE_DELETE, name: '删除' } as IMenuItemProps,
+	EDIT: { id: ID_COLLECTIONS.RESOURCE_EDIT, name: '编辑' } as IMenuItemProps,
 } as const;
 
 /**
